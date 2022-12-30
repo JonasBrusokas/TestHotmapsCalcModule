@@ -27,6 +27,13 @@ class TestAPI(unittest.TestCase):
 
 
     def test_compute(self):
+        """
+        TODO: modify this part when wanting to run tests
+        Uses inputs from /cm/tests/data/...
+
+        > Input raster and layers
+        """
+
         raster_file_path = 'tests/data/raster_for_test.tif'
         # simulate copy from HTAPI to CM
         save_path = UPLOAD_DIRECTORY+"/raster_for_test.tif"
@@ -40,6 +47,7 @@ class TestAPI(unittest.TestCase):
         inputs_parameter_selection["multiplication_factor"] = 2
 
         # register the calculation module a
+        # >>> 'payload' - This is sent to the calculation module
         payload = {"inputs_raster_selection": inputs_raster_selection,
                    "inputs_parameter_selection": inputs_parameter_selection,
                    "inputs_vector_selection": inputs_vector_selection}

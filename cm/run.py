@@ -56,7 +56,10 @@ def start_runner():
 log.info(application)
 if __name__ == '__main__':
     #start_runner()
-    application.run(host='0.0.0.0', port=constant.PORT)
+    # application.run(host='0.0.0.0', port=constant.PORT)
+
+    # NOTE: IP and port are for demo purposes
+    application.run(host='127.0.0.1', port=55000)
 
 
 
